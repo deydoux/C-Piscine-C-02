@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 13:45:03 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/08 14:44:52 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/08 14:58:33 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	puthex(char c)
+void	putchar_hex(char c)
 {
 	char	*base;
 
@@ -35,7 +35,7 @@ void	ft_putstr_non_printable(char *str)
 	while (str[i] != '\0')
 	{
 		if (str[i] < ' ' || str[i] == 127)
-			puthex(str[i]);
+			putchar_hex(str[i]);
 		else
 			ft_putchar(str[i]);
 		i++;
