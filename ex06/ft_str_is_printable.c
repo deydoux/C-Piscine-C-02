@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 12:45:03 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/07 19:20:48 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/08 14:42:03 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_str_is_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] < ' ')
+		if (str[i] < ' ' || str[i] == 127)
 			return (0);
 		i++;
 	}
