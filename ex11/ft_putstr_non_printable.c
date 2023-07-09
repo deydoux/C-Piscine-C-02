@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 13:45:03 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/08 14:58:33 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/09 11:26:19 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	putchar_hex(char c)
+void	putchar_hex(unsigned char c)
 {
 	char	*base;
 
